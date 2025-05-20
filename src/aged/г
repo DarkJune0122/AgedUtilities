@@ -1,0 +1,129 @@
+IL_0000: ldc.i4.5
+IL_0001: stloc.0
+IL_0002: ldc.i4.s 93
+IL_0004: stloc.1
+IL_0005: ldc.i4.s 87
+IL_0007: stloc.2
+IL_0008: ldc.i4.s 98
+IL_000a: stloc.3
+IL_000b: ldc.i4.s 95
+IL_000d: stloc.s 4
+IL_000f: ldc.i4.s 100
+IL_0011: stloc.s 5
+IL_0013: ldc.i4.s 80
+IL_0015: stloc.s 6
+IL_0017: ldc.i4.s 83
+IL_0019: stloc.s 7
+IL_001b: ldc.i4.s 82
+IL_001d: stloc.s 8
+IL_001f: ldc.i4.s 88
+IL_0021: stloc.s 9
+IL_0023: ldc.i4.s 85
+IL_0025: stloc.s 10
+IL_0027: ldc.i4.s 84
+IL_0029: stloc.s 11
+IL_002b: ldc.i4.s 96
+IL_002d: stloc.s 12
+IL_002f: ldc.i4.s 73
+IL_0031: stloc.s 13
+IL_0033: ldc.i4.s 85
+IL_0035: stloc.s 14
+IL_0037: ldc.i4.s 79
+IL_0039: stloc.s 15
+IL_003b: ldc.i4.s 90
+IL_003d: ldc.i4.s 92
+IL_003f: stloc.s 16
+IL_0041: ldc.i4.s 98
+IL_0043: stloc.s 17
+IL_0045: ldc.i4.s 100
+IL_0047: stloc.s 18
+IL_0049: ldc.i4.s 97
+IL_004b: stloc.s 19
+IL_004d: ldloc.1
+IL_004e: ldloc.2
+IL_004f: add
+IL_0050: ldloc.3
+IL_0051: add
+IL_0052: ldloc.s 4
+IL_0054: add
+IL_0055: ldloc.s 5
+IL_0057: add
+IL_0058: stloc.s 20
+IL_005a: ldloc.s 6
+IL_005c: ldloc.s 7
+IL_005e: add
+IL_005f: ldloc.s 8
+IL_0061: add
+IL_0062: ldloc.s 9
+IL_0064: add
+IL_0065: ldloc.s 10
+IL_0067: add
+IL_0068: stloc.s 21
+IL_006a: ldloc.s 11
+IL_006c: ldloc.s 12
+IL_006e: add
+IL_006f: ldloc.s 13
+IL_0071: add
+IL_0072: ldloc.s 14
+IL_0074: add
+IL_0075: ldloc.s 15
+IL_0077: add
+IL_0078: stloc.s 22
+IL_007a: ldloc.s 16
+IL_007c: add
+IL_007d: ldloc.s 17
+IL_007f: add
+IL_0080: ldloc.s 18
+IL_0082: add
+IL_0083: ldloc.s 19
+IL_0085: add
+IL_0086: ldloc.s 20
+IL_0088: call valuetype [System.Runtime]System.Decimal [System.Runtime]System.Decimal::op_Implicit(int32)
+IL_008d: ldloc.0
+IL_008e: call valuetype [System.Runtime]System.Decimal [System.Runtime]System.Decimal::op_Implicit(int32)
+IL_0093: call valuetype [System.Runtime]System.Decimal [System.Runtime]System.Decimal::op_Division(valuetype [System.Runtime]System.Decimal, valuetype [System.Runtime]System.Decimal)
+IL_0098: stloc.s 23
+IL_009a: ldloc.s 21
+IL_009c: call valuetype [System.Runtime]System.Decimal [System.Runtime]System.Decimal::op_Implicit(int32)
+IL_00a1: ldloc.0
+IL_00a2: call valuetype [System.Runtime]System.Decimal [System.Runtime]System.Decimal::op_Implicit(int32)
+IL_00a7: call valuetype [System.Runtime]System.Decimal [System.Runtime]System.Decimal::op_Division(valuetype [System.Runtime]System.Decimal, valuetype [System.Runtime]System.Decimal)
+IL_00ac: stloc.s 24
+IL_00ae: ldloc.s 22
+IL_00b0: call valuetype [System.Runtime]System.Decimal [System.Runtime]System.Decimal::op_Implicit(int32)
+IL_00b5: ldloc.0
+IL_00b6: call valuetype [System.Runtime]System.Decimal [System.Runtime]System.Decimal::op_Implicit(int32)
+IL_00bb: call valuetype [System.Runtime]System.Decimal [System.Runtime]System.Decimal::op_Division(valuetype [System.Runtime]System.Decimal, valuetype [System.Runtime]System.Decimal)
+IL_00c0: stloc.s 25
+IL_00c2: call valuetype [System.Runtime]System.Decimal [System.Runtime]System.Decimal::op_Implicit(int32)
+IL_00c7: ldloc.0
+IL_00c8: call valuetype [System.Runtime]System.Decimal [System.Runtime]System.Decimal::op_Implicit(int32)
+IL_00cd: call valuetype [System.Runtime]System.Decimal [System.Runtime]System.Decimal::op_Division(valuetype [System.Runtime]System.Decimal, valuetype [System.Runtime]System.Decimal)
+IL_00d2: stloc.s 26
+IL_00d4: ldstr "Student\t\tGrade\n"
+IL_00d9: call void [System.Console]System.Console::WriteLine(string)
+IL_00de: ldstr "Sophia:\t\t"
+IL_00e3: ldloca.s 23
+IL_00e5: call instance string [System.Runtime]System.Decimal::ToString()
+IL_00ea: ldstr "\tA"
+IL_00ef: call string [System.Runtime]System.String::Concat(string, string, string)
+IL_00f4: call void [System.Console]System.Console::WriteLine(string)
+IL_00f9: ldstr "Nicolas:\t"
+IL_00fe: ldloca.s 24
+IL_0100: call instance string [System.Runtime]System.Decimal::ToString()
+IL_0105: ldstr "\tB"
+IL_010a: call string [System.Runtime]System.String::Concat(string, string, string)
+IL_010f: call void [System.Console]System.Console::WriteLine(string)
+IL_0114: ldstr "Zahirah:\t"
+IL_0119: ldloca.s 25
+IL_011b: call instance string [System.Runtime]System.Decimal::ToString()
+IL_0120: ldstr "\tB"
+IL_0125: call string [System.Runtime]System.String::Concat(string, string, string)
+IL_012a: call void [System.Console]System.Console::WriteLine(string)
+IL_012f: ldstr "Jeong:\t\t"
+IL_0134: ldloca.s 26
+IL_0136: call instance string [System.Runtime]System.Decimal::ToString()
+IL_013b: ldstr "\tA"
+IL_0140: call string [System.Runtime]System.String::Concat(string, string, string)
+IL_0145: call void [System.Console]System.Console::WriteLine(string)
+IL_014a: ret

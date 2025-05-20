@@ -1,20 +1,20 @@
 #the mod name as displayed in-game
-displayName: "Java Mod Template"
+displayName: "Aged Utilities"
 
 #the internal name of your mod
-name: "example-java-mod"
+name: "aged-aged.analysis"
 
 #your name
-author: "You"
+author: "DarkJune"
 
 #the fully qualified main class of the mod
-main: "example.ExampleJavaMod"
+main: "aged.AgedUtilities"
 
 #the mod description as seen in the mod dialog
-description: "A Mindustry Java mod template."
+description: "A set of utilities for simplify complicated things."
 
 #the mod version
-version: 1.0
+version: 0.1
 
 #the minimum game build required to run this mod
 minGameVersion: 145

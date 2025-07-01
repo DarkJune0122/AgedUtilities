@@ -113,8 +113,11 @@ public class LinearSelection implements Selector, InputProcessor, ApplicationLis
         if (pointer == 0)
         {
             Vec2 pos = Core.input.mouseWorld();
-            int x = lastX = (int)(pos.x / Vars.tilesize);
-            int y = lastY = (int)(pos.y / Vars.tilesize);
+            int x = lastX = (int)((pos.x + 4) / Vars.tilesize);
+            int y = lastY = (int)((pos.y + 4) / Vars.tilesize);
+            Log.info("original: " + pos);
+            Log.info("x: " + x);
+            Log.info("y: " + y);
             Building build = Vars.world.build(x, y);
             isSelecting = !selected.contains(build);
             if (isSelecting) {
@@ -133,8 +136,8 @@ public class LinearSelection implements Selector, InputProcessor, ApplicationLis
         if (pointer == 0)
         {
             Vec2 pos = Core.input.mouseWorld();
-            int x = (int)(pos.x / Vars.tilesize);
-            int y = (int)(pos.y / Vars.tilesize);
+            int x = (int)((pos.x + 4) / Vars.tilesize);
+            int y = (int)((pos.y + 4) / Vars.tilesize);
             if (x != lastX || y != lastY) {
                 Building build = Vars.world.build(x, y);
                 if (isSelecting) {
